@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Log;
 
 class PostsTableSeeder extends Seeder
 {
@@ -11,6 +12,8 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Post::class, 90)->create()->each(function ($post) {
+            Log::debug(['Generate post: ' => $post->toArray()]);
+        });
     }
 }

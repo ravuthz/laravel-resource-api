@@ -13,9 +13,14 @@ mysql -u root -p -e "drop database laravel_resource_api; create database laravel
 ```
 
 
-### Create Post resource
+### Create Post resource (Migration, Model, Seed, Controller)
 ```
 php artisan make:model Post -m
 php artisan make:controller PostController
 php artisan make:seeder PostsTableSeeder
+```
+
+### Update Post resource (Migration, Model, Seed, Controller)
+```
+php artisan migrate:refresh --seed
 ```
