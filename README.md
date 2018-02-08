@@ -24,3 +24,8 @@ php artisan make:seeder PostsTableSeeder
 ```
 php artisan migrate:refresh --seed
 ```
+
+### Create and Implement Post Resource (API response template)
+```
+php artisan make:resource PostResource
+```
