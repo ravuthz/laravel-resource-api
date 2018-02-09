@@ -32,6 +32,7 @@ php artisan migrate:refresh --seed
 ### Create and Implement Post Resource (API response template)
 ```
 php artisan make:resource PostResource
+php artisan make:resource PostCollection --collection
 ```
 
 ### Make Testing
